@@ -2,10 +2,12 @@
 
 ## Setup
 
-`config.exs` : 
+config.exs: 
 
+```
 config :mongo_error_test, 
   database: "your_database_name"
+```
 
 ## Run
 
