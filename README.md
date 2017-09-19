@@ -11,7 +11,7 @@ config :mongo_error_test,
 
 ```
 $ iex -S mix
->MongoErrorTest.Tester.run()
+> MongoErrorTest.Tester.run()
 ```
 
 ## App side fix
