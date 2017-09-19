@@ -18,7 +18,7 @@ $ iex -S mix
 
 ## App side fix
 
-Worker.ex:16
+Worker.ex:12
 
 ```
 # Uncomment below to wait for mongo conn to become available

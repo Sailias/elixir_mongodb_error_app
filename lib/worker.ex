@@ -7,7 +7,12 @@ defmodule MongoErrorTest.Worker do
 
   def init(_state) do
     database = Application.get_env(:mongo_error_test, :database)
-    Mongo.start_link(database: database)
+    new_state = Mongo.start_link(database: database)
+    
+    # Uncomment below to wait for mongo conn to become available
+    # Process.sleep(100)
+    
+    new_state
   end
 
   def find(pid, collection, query) do
